@@ -12,6 +12,10 @@ var SimpleTaskQueue = function(){
     }
   }
 
+  self.isEmpty = function(){
+    return (tasks.length === 0);
+  }
+
   self.run = function(){
     queueShouldRun = true;
     queueHasStopped = false;
